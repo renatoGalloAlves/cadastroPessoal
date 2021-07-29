@@ -90,6 +90,9 @@ main, .inline, .label, .container {
 .radio-text {
   padding: 12px 20px;
   text-align: center;
+}
+
+.radio-text, .button-form {
   transition: all .5s ease-in-out;
 }
 
@@ -102,9 +105,15 @@ main, .inline, .label, .container {
   flex-direction: column;
 }
 
-input[type="text"].campo-input {
+.campo-input {
   padding: 12px 20px;
   width: calc(100% - 40px);
+}
+
+select.campo-input {
+  min-width: 260px;
+  min-height: 44px;
+  
 }
 
 .button-form {
@@ -118,6 +127,7 @@ input[type="text"].campo-input {
   margin: 0 auto;
   padding: 15px 25px;
   width: 180px;
+
 }
 
 .button-form:hover {
