@@ -10,8 +10,7 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
-    font-size: 40px;
-  
+  font-size: 40px;
 }
 
 main {
@@ -27,11 +26,21 @@ main {
 
 .banner {
   align-items: center;
-  position: fixed;
-  left: 0;
-  width: calc(60% - 30px);
   height: calc(100vh - 30px);
-  background-color: cornflowerblue;
+  left: 0;
+  position: fixed;
+  width: calc(60% - 30px);
+}
+
+.banner,
+input[type="text"].campo-input:focus, 
+.inline.radio .label input[type="radio"]:checked + .radio-text {
+  background: linear-gradient(to top,#9d50bb,  #6e48aa);
+  color: #fff;
+}
+
+.banner h1 {
+  font-size: 3.5rem;
 }
 
 .form {
@@ -62,6 +71,7 @@ main, .inline, .label, .container {
 .inline.radio, input {
   border-radius: 4px;
   border: 1px solid #ccc;
+  font-size: 1.1rem;
 } 
 
 .inline.radio .label {
@@ -74,7 +84,7 @@ main, .inline, .label, .container {
 }
 
 .titulo-campo {
-  font-size: 12px;
+  font-size: 1rem;
   font-weight: 700;
 }
 .radio-text {
@@ -83,21 +93,34 @@ main, .inline, .label, .container {
   transition: all .5s ease-in-out;
 }
 
-.inline.radio .label input[type="radio"]:checked + .radio-text {
-  background: #eee;
-}
-
 .inline.radio .label:not(:last-child) {
   border-right: 1px solid #ccc;
 }
 
 .label {
-  flex-direction: column;
   cursor: pointer;
+  flex-direction: column;
 }
 
 input[type="text"].campo-input {
   padding: 12px 20px;
   width: calc(100% - 40px);
+}
+
+.button-form {
+  background-color: #9d50bb;
+  border-radius: 4px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0 auto;
+  padding: 15px 25px;
+  width: 180px;
+}
+
+.button-form:hover {
+  background-color: #6e48aa;
 }
 
