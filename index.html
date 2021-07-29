@@ -7,82 +7,88 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header>
-    <h1>
-      Cadastro Pessoal
-    </h1>
-  </header>
-  
   <main>
-    <div class="container">
+    <section class="banner container">
+      <h1>
+        Cadastro Pessoal
+      </h1>
+    </section>
+    <section class="container form">
       <form id="form-envio-dados">
         <div class="grupo-campo">
           <label class="label" for="campo-nome">
             <span class="titulo-campo">Nome Completo:</span>
-            <input id="campo-nome" name="campo-nome" type="text" tabindex="1" required />
+            <input id="campo-nome" name="campo-nome" type="text" class="campo-input" tabindex="1" required />
           </label>
         </div>
 
         <div class="grupo-campo">
           <label class="label" for="campo-cpf">
             <span class="titulo-campo">CPF:</span>
-            <input id="campo-cpf" name="campo-cpf" type="text" placeholder="000.000.000-00" tabindex="2" required maxlength="14" />
+            <input id="campo-cpf" name="campo-cpf" type="text" class="campo-input" placeholder="000.000.000-00" tabindex="2" required maxlength="14" />
           </label>
         </div>
 
         <div class="grupo-campo">
           <label class="label" for="campo-rg">
             <span class="titulo-campo">RG:</span>
-            <input id="campo-rg" name="campo-rg" type="text" placeholder="00.000.000-0" tabindex="3" />
+            <input id="campo-rg" name="campo-rg" type="text" class="campo-input" placeholder="00.000.000-0" tabindex="3" />
           </label>
         </div>
 
-        <div class="grupo-campo inline">
-          <label class="label" for="campo-sexo">
-            <span class="titulo-campo">Sexo:</span>
-            <input id="sexo-feminino" name="campo-sexo" type="radio" tabindex="4"/>
-            <span class="radio-text">Feminino</span>
-          </label>
+        <div class="grupo-campo">
+          <span class="titulo-campo">Gênero:</span>
+          <div class="inline radio">
+            <label class="label" for="genero-feminino">
+              <input id="genero-feminino" name="campo-genero" type="radio" tabindex="4"/>
+              <span class="radio-text">Feminino</span>
+            </label>
+  
+            <label class="label" for="genero-masculino">
+              <input id="genero-masculino" name="campo-genero" type="radio" tabindex="5"/>
+              <span class="radio-text">Masculino</span>
+            </label>
 
-          <label class="label" for="campo-sexo">
-            <input id="sexo-masculino" name="campo-sexo" type="radio" tabindex="5"/>
-            <span class="radio-text">Masculino</span>
-          </label>
+            <label class="label" for="genero-outro">
+              <input id="genero-outro" name="campo-genero" type="radio" tabindex="5"/>
+              <span class="radio-text">Outro</span>
+            </label>
+          </div>
         </div>
 
         <div class="grupo-campo inline">
           <label class="label" for="campo-endereco">
             <span class="titulo-campo">Endereço:</span>
-            <input id="campo-endereco" name="campo-endereco" type="text" tabindex="6" required />
+            <input id="campo-endereco" name="campo-endereco" type="text" class="campo-input" tabindex="6" required />
           </label>
 
           <label class="label" for="campo-numero">
             <span class="titulo-campo">Número:</span>
-            <input id="campo-numero" name="campo-numero" type="text" tabindex="7" required />
+            <input id="campo-numero" name="campo-numero" type="text" class="campo-input" tabindex="7" required />
           </label>
         </div>
 
         <div class="grupo-campo inline">
           <label class="label" for="campo-cep">
             <span class="titulo-campo">Cep:</span>
-            <input id="campo-cep" name="campo-cep" type="text" tabindex="11" placeholder="00000-000" maxlength="9" />
+            <input id="campo-cep" name="campo-cep" type="text" class="campo-input" tabindex="11" placeholder="00000-000" maxlength="9" />
           </label>
 
           <label class="label" for="campo-bairro">
             <span class="titulo-campo">Bairro:</span>
-            <input id="campo-bairro" name="campo-bairro" type="text" tabindex="8" required />
+            <input id="campo-bairro" name="campo-bairro" type="text" class="campo-input" tabindex="8" required />
           </label>
         </div>
 
         <div class="grupo-campo inline">
           <label class="label" for="campo-cidade">
             <span class="titulo-campo">Cidade:</span>
-            <input id="campo-cidade" name="campo-cidade" type="text" tabindex="9" required />
+            <input id="campo-cidade" name="campo-cidade" type="text" class="campo-input" tabindex="9" required />
           </label>
 
           <label class="label" for="campo-estado">
             <span class="titulo-campo">Estado:</span>
-            <input id="campo-estado" name="campo-estado" type="text" tabindex="10" placeholder="RJ" required maxlength="2" minlength="2" />
+            <input id="campo-estado" name="campo-estado" type="text" class="campo-input" tabindex="10" placeholder="RJ" required maxlength="2" minlength="2" />
           </label>
         </div>
 
@@ -90,24 +96,18 @@
 
           <label class="label" for="campo-telefone">
             <span class="titulo-campo">Telefone:</span>
-            <input id="campo-telefone" name="campo-telefone" type="text" tabindex="12" placeholder="(00) 0000-0000" maxlength="14" />
+            <input id="campo-telefone" name="campo-telefone" type="text" class="campo-input" tabindex="12" placeholder="(00) 0000-0000" maxlength="14" />
           </label>
 
           <label class="label" for="campo-celular">
             <span class="titulo-campo">Celular:</span>
-            <input id="campo-celular" name="campo-celular" type="text" tabindex="13" placeholder="(00) 00000-0000" required maxlength="15"  />
+            <input id="campo-celular" name="campo-celular" type="text" class="campo-input" tabindex="13" placeholder="(00) 00000-0000" required maxlength="15"  />
           </label>
         </div>
       </form>
-    </div>
+    </section>
+    
   </main>
-
-  <footer class="rodape">
-    <img src="image/logoRA1.png" alt="Estartando Dev" />
-
-    <p class="legend">Desenvolvido por:</br>Renato Alves</p>
-  </footer>
-
   <script src="js/index.js"></script>
 </body>
 </html>
