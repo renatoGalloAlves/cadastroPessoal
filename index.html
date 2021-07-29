@@ -11,37 +11,39 @@
     <h1>
       Cadastro Pessoal
     </h1>
-
   </header>
+  
   <main>
     <div class="container">
       <form id="form-envio-dados">
         <div class="grupo-campo">
           <label class="label" for="campo-nome">
-            <span class="titulo-campo">Nome Completo</span>
+            <span class="titulo-campo">Nome Completo:</span>
             <input id="campo-nome" name="campo-nome" type="text" tabindex="1" required />
           </label>
         </div>
 
         <div class="grupo-campo">
           <label class="label" for="campo-cpf">
-            <span class="titulo-campo">CPF</span>
+            <span class="titulo-campo">CPF:</span>
             <input id="campo-cpf" name="campo-cpf" type="text" placeholder="000.000.000-00" tabindex="2" required maxlength="14" />
           </label>
         </div>
 
         <div class="grupo-campo">
           <label class="label" for="campo-rg">
-            <span class="titulo-campo">RG</span>
+            <span class="titulo-campo">RG:</span>
             <input id="campo-rg" name="campo-rg" type="text" placeholder="00.000.000-0" tabindex="3" />
           </label>
         </div>
 
         <div class="grupo-campo inline">
           <label class="label" for="campo-sexo">
+            <span class="titulo-campo">Sexo:</span>
             <input id="sexo-feminino" name="campo-sexo" type="radio" tabindex="4"/>
             <span class="radio-text">Feminino</span>
           </label>
+
           <label class="label" for="campo-sexo">
             <input id="sexo-masculino" name="campo-sexo" type="radio" tabindex="5"/>
             <span class="radio-text">Masculino</span>
@@ -50,55 +52,62 @@
 
         <div class="grupo-campo inline">
           <label class="label" for="campo-endereco">
-            <span class="titulo-campo">Endereço</span>
+            <span class="titulo-campo">Endereço:</span>
             <input id="campo-endereco" name="campo-endereco" type="text" tabindex="6" required />
           </label>
 
           <label class="label" for="campo-numero">
-            <span class="titulo-campo">Número</span>
+            <span class="titulo-campo">Número:</span>
             <input id="campo-numero" name="campo-numero" type="text" tabindex="7" required />
           </label>
         </div>
 
         <div class="grupo-campo inline">
-          <label class="label" for="campo-bairro">
-            <span class="titulo-campo">Bairro</span>
-            <input id="campo-bairro" name="campo-bairro" type="text" tabindex="8" required />
+          <label class="label" for="campo-cep">
+            <span class="titulo-campo">Cep:</span>
+            <input id="campo-cep" name="campo-cep" type="text" tabindex="11" placeholder="00000-000" maxlength="9" />
           </label>
 
+          <label class="label" for="campo-bairro">
+            <span class="titulo-campo">Bairro:</span>
+            <input id="campo-bairro" name="campo-bairro" type="text" tabindex="8" required />
+          </label>
+        </div>
+
+        <div class="grupo-campo inline">
           <label class="label" for="campo-cidade">
-            <span class="titulo-campo">Cidade</span>
+            <span class="titulo-campo">Cidade:</span>
             <input id="campo-cidade" name="campo-cidade" type="text" tabindex="9" required />
           </label>
 
           <label class="label" for="campo-estado">
-            <span class="titulo-campo">Estado</span>
+            <span class="titulo-campo">Estado:</span>
             <input id="campo-estado" name="campo-estado" type="text" tabindex="10" placeholder="RJ" required maxlength="2" minlength="2" />
           </label>
         </div>
 
         <div class="grupo-campo inline">
-          <label class="label" for="campo-cep">
-            <span class="titulo-campo">Cep</span>
-            <input id="campo-cep" name="campo-cep" type="text" tabindex="11" placeholder="00000-000" maxlength="9" />
-          </label>
 
           <label class="label" for="campo-telefone">
-            <span class="titulo-campo">Telefone</span>
+            <span class="titulo-campo">Telefone:</span>
             <input id="campo-telefone" name="campo-telefone" type="text" tabindex="12" placeholder="(00) 0000-0000" maxlength="14" />
           </label>
 
           <label class="label" for="campo-celular">
-            <span class="titulo-campo">Celular</span>
+            <span class="titulo-campo">Celular:</span>
             <input id="campo-celular" name="campo-celular" type="text" tabindex="13" placeholder="(00) 00000-0000" required maxlength="15"  />
           </label>
         </div>
       </form>
     </div>
   </main>
-  <footer>
-    <div class="container"></div>
+
+  <footer class="rodape">
+    <img src="image/logoRA1.png" alt="Estartando Dev" />
+
+    <p class="legend">Desenvolvido por:</br>Renato Alves</p>
   </footer>
+
   <script src="js/index.js"></script>
 </body>
 </html>
