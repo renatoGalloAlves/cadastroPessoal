@@ -24,6 +24,8 @@ main {
   flex: 1;
 }
 
+
+
 .banner {
   align-items: center;
   height: calc(100vh - 30px);
@@ -134,3 +136,10 @@ select.campo-input {
   background-color: #6e48aa;
 }
 
+.campo-input {
+  position: relative;
+}
+[required] {
+  border-left-color: red;
+  border-left-width: 3px;
+}
