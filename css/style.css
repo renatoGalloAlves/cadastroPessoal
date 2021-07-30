@@ -139,6 +139,15 @@ select.campo-input {
 .campo-input {
   position: relative;
 }
+
+.disclaimer {
+  background: #ffcdd2;
+  border-radius: 4px;
+  color: red;
+  padding: 10px;
+  margin-bottom: 1rem;
+  display: flex;
+}
 [required] {
   border-left-color: red;
   border-left-width: 3px;
